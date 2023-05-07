@@ -9,16 +9,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./index.js":
-/*!******************!*\
-  !*** ./index.js ***!
-  \******************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("var PeerServer = (__webpack_require__(/*! peer */ \"peer\").PeerServer);\nvar server = PeerServer({ port: 443, path: \"/connect\" });\n\n\n//# sourceURL=webpack://webrtc-server/./index.js?");
-
-/***/ }),
-
 /***/ "peer":
 /*!**********************************!*\
   !*** external "require('peer')" ***!
@@ -27,6 +17,16 @@ eval("var PeerServer = (__webpack_require__(/*! peer */ \"peer\").PeerServer);\n
 
 "use strict";
 module.exports = require('peer');
+
+/***/ }),
+
+/***/ "./src/index.cjs":
+/*!***********************!*\
+  !*** ./src/index.cjs ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var PeerServer = (__webpack_require__(/*! peer */ \"peer\").PeerServer);\nvar server = PeerServer({ port: 3500, path: \"/connect\" });\n\n\n//# sourceURL=webpack://webrtc-server/./src/index.cjs?");
 
 /***/ })
 
@@ -61,7 +61,7 @@ module.exports = require('peer');
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.cjs");
 /******/ 	
 /******/ })()
 ;
