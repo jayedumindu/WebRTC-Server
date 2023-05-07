@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jayedumindu/WebRTC-Server#readme",
   "dependencies": {
+    "http": "^0.0.1-security",
     "peer": "^1.0.0"
   },
   "devDependencies": {
