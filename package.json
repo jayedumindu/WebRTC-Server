@@ -1,0 +1,26 @@
+{
+  "name": "webrtc-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayedumindu/WebRTC-Server.git"
+  },
+  "author": "jaydumi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayedumindu/WebRTC-Server/issues"
+  },
+  "homepage": "https://github.com/jayedumindu/WebRTC-Server#readme",
+  "dependencies": {
+    "peer": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
