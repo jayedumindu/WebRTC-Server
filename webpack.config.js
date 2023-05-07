@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   target: "node",
-  entry: "./index.js",
+  entry: "./src/index.js",
   externals: {
     peer: "require('peer')",
   },
