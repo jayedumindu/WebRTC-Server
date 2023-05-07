@@ -3,6 +3,9 @@ const path = require("path");
 module.exports = {
   target: "node",
   entry: "./index.js",
+  externals: {
+    peer: "require('peer')",
+  },
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
