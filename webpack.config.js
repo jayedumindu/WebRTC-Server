@@ -12,7 +12,7 @@ export const externals = {
 };
 export const output = {
   filename: "main.js",
-  path: path(__dirname, "dist"),
+  path: path.resolve(__dirname, "dist"),
 };
 export const mode = "development";
 export const resolve = {
