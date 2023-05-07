@@ -1,4 +1,4 @@
-import { resolve as _resolve } from "path";
+import * as path from "path";
 
 export const target = "node";
 export const entry = "./src/index.cjs";
@@ -7,7 +7,7 @@ export const externals = {
 };
 export const output = {
   filename: "main.js",
-  path: _resolve(__dirname, "dist"),
+  path: path(__dirname, "dist"),
 };
 export const mode = "development";
 export const resolve = {
