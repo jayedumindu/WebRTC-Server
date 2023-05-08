@@ -5,7 +5,7 @@ server.on("connection", function (client) {
   console.log("new connection with id " + client.id);
 });
 
-server.on("disconnect", function (id) {
+server.on("disconnect", function (client) {
   console.log("disconnect with id " + client.id);
 });
 
