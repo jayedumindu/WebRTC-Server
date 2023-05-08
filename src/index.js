@@ -1,12 +1,12 @@
 import { PeerServer } from "peer";
 var server = PeerServer({ port: 443, path: "/connect" });
 
-server.on("connection", function (id) {
-  console.log("new connection with id " + id);
+server.on("connection", function (client) {
+  console.log("new connection with id " + client.id);
 });
 
 server.on("disconnect", function (id) {
-  console.log("disconnect with id " + id);
+  console.log("disconnect with id " + client.id);
 });
 
 
